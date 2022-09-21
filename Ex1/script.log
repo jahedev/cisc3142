@@ -1,0 +1,277 @@
+Script started on 2022-09-14 12:01:58-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="90" LINES="25"]
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ mkdir cisc
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ mv cisc/ cisc3142
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ cd cisc3142/
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ mkdir Ex1
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ touch README.md
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ ls
+[0m[01;34mEx1[0m  README.md
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ mkdir logs[K[K[K[K[K[K[K[K[K[Kmv README.md Ex1/
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ v[Kmv Ex1/README.md .
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ cp README.md Ex1/
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ mkdir logs src
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ mv -r logs src[K[K[KEx1/n Ex1/s Ex1/[1P Ex1/[1P Ex1/[C Ex1/s Ex1/r Ex1/c Ex1/
+mv: invalid option -- 'r'
+Try 'mv --help' for more information.
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ ls
+[0m[01;34mEx1[0m  README.md  [01;34mlogs[0m  [01;34msrc[0m
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ mv logs[K[K[K[K[K[K[Kman l[Kmv
+[?1049h[22;0;0t[?1h=MV(1)                                User Commands                                MV(1)[m
+[m
+[1mNAME[0m[m
+       mv - move (rename) files[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmv[0m [[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[24m[m
+       [1mmv[0m [[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[24m[m
+       [1mmv[0m [[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m--backup[0m[=[4mCONTROL[24m][m
+              make a backup of each existing destination file[m
+[m
+       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[m
+       [1m-f[0m, [1m--force[0m[m
+              do not prompt before overwriting[m
+[m
+       [1m-i[0m, [1m--interactive[0m[m
+[7m Manual page mv(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              prompt before overwrite[m
+[7m Manual page mv(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-n[0m, [1m--no-clobber[0m[m
+[7m Manual page mv(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not overwrite an existing file[m
+[7m Manual page mv(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If you specify more than one of [1m-i[0m, [1m-f[0m, [1m-n[0m, only the final one takes effect.[m
+[7m Manual page mv(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--strip-trailing-slashes[0m[m
+[7m Manual page mv(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              remove any trailing slashes from each SOURCE argument[m
+[7m Manual page mv(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-S[0m, [1m--suffix[0m=[4mSUFFIX[24m[m
+[7m Manual page mv(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              override the usual backup suffix[m
+[7m Manual page mv(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-t[0m, [1m--target-directory[0m=[4mDIRECTORY[24m[m
+[7m Manual page mv(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              move all SOURCE arguments into DIRECTORY[m
+[7m Manual page mv(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-T[0m, [1m--no-target-directory[0m[m
+[7m Manual page mv(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              treat DEST as a normal file[m
+[7m Manual page mv(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-u[0m, [1m--update[0m[m
+[7m Manual page mv(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              move only when the SOURCE file is newer than the destination file or when[m
+[7m Manual page mv(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the destination file is missing[m
+[7m Manual page mv(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-v[0m, [1m--verbose[0m[m
+[7m Manual page mv(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              explain what is being done[m
+[7m Manual page mv(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-Z[0m, [1m--context[0m[m
+[7m Manual page mv(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set SELinux security context of destination file to default type[m
+[7m Manual page mv(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help[0m display this help and exit[m
+[7m Manual page mv(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--version[0m[m
+[7m Manual page mv(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              output version information and exit[m
+[7m Manual page mv(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The backup suffix is '~', unless set with [1m--suffix[0m or SIMPLE_BACKUP_SUFFIX.  The[m
+[7m Manual page mv(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       version  control  method  may be selected via the [1m--backup[0m option or through the[m
+[7m Manual page mv(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       VERSION_CONTROL environment variable.  Here are the values:[m
+[7m Manual page mv(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       none, off[m
+[7m Manual page mv(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              never make backups (even if [1m--backup[0m is given)[m
+[7m Manual page mv(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       numbered, t[m
+[7m Manual page mv(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              make numbered backups[m
+[7m Manual page mv(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       existing, nil[m
+[7m Manual page mv(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              numbered if numbered backups exist, simple otherwise[m
+[7m Manual page mv(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page mv(1) line 48 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ mv logs src/[K Ex1/
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ ls
+[0m[01;34mEx1[0m  README.md
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ tree
+
+Command 'tree' not found, but can be installed with:
+
+snap install tree  # version 1.8.0+pkg-3fd6, or
+apt  install tree  # version 1.8.0-1
+
+See 'snap info tree' for additional versions.
+
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ sudo apt install tree
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 43.0 kB of archives.
+After this operation, 115 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 tree amd64 1.8.0-1 [43.0 kB]
+[33m26% [1 tree 14.2 kB/43.0 kB 33%][0m[33m                                100% [Working][0m              Fetched 43.0 kB in 0s (104 kB/s)
+
+7[0;24r8[1ASelecting previously unselected package tree.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69124 files and directories currently installed.)
+Preparing to unpack .../tree_1.8.0-1_amd64.deb ...
+7[25;0f[42m[30mProgress: [  0%][49m[39m [....................................................................] 87[25;0f[42m[30mProgress: [ 20%][49m[39m [#############.......................................................] 8Unpacking tree (1.8.0-1) ...
+7[25;0f[42m[30mProgress: [ 40%][49m[39m [###########################.........................................] 8Setting up tree (1.8.0-1) ...
+7[25;0f[42m[30mProgress: [ 60%][49m[39m [########################################............................] 87[25;0f[42m[30mProgress: [ 80%][49m[39m [######################################################..............] 8Processing triggers for man-db (2.9.1-1) ...
+
+7[0;25r8[1A[J]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ tree
+[01;34m.[00m
+├── [01;34mEx1[00m
+│   ├── README.md
+│   ├── [01;34mlogs[00m
+│   └── [01;34msrc[00m
+└── README.md
+
+3 directories, 2 files
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ G[Kg++ --version
+g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git --version
+git version 2.25.1
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ sudo apt in[Knstall git
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+git is already the newest version (1:2.25.1-1ubuntu3.5).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ ls
+[0m[01;34mEx1[0m  README.md
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ cd ..
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ mv cisc3142/ tmp
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ git clone git@github.com:jahedev/cisc3142.git
+Cloning into 'cisc3142'...
+The authenticity of host 'github.com (140.82.112.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.112.4' (ECDSA) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ ls
+[0m[01;34mcisc3142[0m  [01;34mclang[0m  [01;34mcpp[0m  script  [01;34mtmp[0m
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ cd[K[Kls cisc3142/
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ ls tmp/
+[0m[01;34mEx1[0m  README.md
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ mv tmp/Ex1 Re[KE[K[Ktmp/Re[K[K[K[K[K[K[K[K[K[K* cisc3142/
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ ls tmp/
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ rm -r tmp/
+]0;vagrant@ubuntu-focal: ~/VMShare[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare[00m$ cd cisc3142/
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ ls
+[0m[01;34mEx1[0m  README.md
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mEx1/[m
+	[31mREADME.md[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git add -A
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   Ex1/README.md[m
+	[32mnew file:   README.md[m
+
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git commit -m '[K"initial setup"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'vagrant@ubuntu-focal.(none)')
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git config --global user.email "you@example.com"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"j"a"h"e"d"e"v"@"g"m"a"i"l"."c"o" [A]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm"
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git config --global user.name "Your Name"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"j"a"h"e"d"e"v"
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git config --global user.name "jahedev"email "jahedev@gmail.com"[A]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ [C[C[C[C[C[C[20Pmmit -m "initial setup"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kcommit -m "initial setup"
+[master (root-commit) 81d5b61] initial setup
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Ex1/README.md
+ create mode 100644 README.md
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 285 bytes | 95.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:jahedev/cisc3142.git
+ * [new branch]      master -> master
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ cd Ex1/
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142/Ex1[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142/Ex1[00m$ ls
+README.md  [0m[01;34mlogs[0m  [01;34msrc[0m
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142/Ex1[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142/Ex1[00m$ cd logs/[K[K[K[K[K[K[K[Ktoc[Kuch logs/.to[K[K[KREADME.md[K[K[K[K[K[K[K[K[Kexample.log to[K[Ksrc/exampe[Kle.cpp
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142/Ex1[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142/Ex1[00m$ vim src/x[Kexample.cpp 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"src/example.cpp" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                         [3;1H~                                                                                         [4;1H~                                                                                         [5;1H~                                                                                         [6;1H~                                                                                         [7;1H~                                                                                         [8;1H~                                                                                         [9;1H~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [m[25;73H0,0-1[9CAll[1;1H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                                         [3;1H~                                                                                         [4;1H~                                                                                         [5;1H~                                                                                         [6;1H~                                                                                         [7;1H~                                                                                         [8;1H~                                                                                         [9;1H~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [m[25;73H0,0-1[9CAll"src/example.cpp" 0L, 0C[1;1H[?25h[?25l[25;63Hi[1;1H[25;63H [1;1H[25;1H[1m-- INSERT --[m[25;13H[K[25;73H0,1[11CAll[1;1H[?25h[?25l#[25;73H1,2[1;2H[?25h[?25li[25;75H3[1;3H[?25h[?25ln[25;75H4[1;4H[?25h[?25lc[25;75H5[1;5H[?25h[?25ll[25;75H6[1;6H[?25h[?25lu[25;75H7[1;7H[?25h[?25ld[25;75H8[1;8H[?25h[?25le[25;75H9[1;9H[?25h[?25l[25;75H10[1;10H[?25h[?25l[38;5;81m#include <[m[25;76H1[1;11H[?25h[?25li[25;76H2[1;12H[?25h[?25lo[25;76H3[1;13H[?25h[?25ls[25;76H4[1;14H[?25h[?25lt[25;76H5[1;15H[?25h[?25lr[25;76H6[1;16H[?25h[?25le[25;76H7[1;17H[?25h[?25la[25;76H8[1;18H[?25h[?25lm[25;76H9[1;19H[?25h[?25l[1;10H[95m<iostream>[m[25;75H20[1;20H[?25h[?25l[2;1H[K[25;73H2,1 [2;1H[?25h[?25l[3;1H[K[25;73H3[3;1H[?25h[?25li[25;75H2[3;2H[?25h[?25ln[25;75H3[3;3H[?25h[?25l[38;5;121mint[m[25;75H4[3;4H[?25h[?25l[25;75H5[3;5H[?25h[?25lm[25;75H6[3;6H[?25h[?25la[25;75H7[3;7H[?25h[?25li[25;75H8[3;8H[?25h[?25ln[25;75H9[3;9H[?25h[?25l([25;75H10[3;10H[?25h[?25l)[46m()[m[25;76H1[3;11H[?25h[?25l()[25;76H2[3;12H[?25h[?25l{[25;76H3[3;13H[?25h[?25l
+        [4;9H[K[25;73H4,2-9[4;9H[?25h[?25l
+        [5;9H[K[25;73H5[5;9H[?25h[?25l}[3;12H[46m{
+
+}[m[25;76H  [5;2H[?25h[?25l[3;12H{
+
+}[25;73H4,1[4;1H[?25h[?25l[25;75H2-9[4;9H[?25h[?25ls[25;75H3-10[4;10H[?25h[?25lt[25;75H4-11[4;11H[?25h[?25ld[25;75H5-12[4;12H[?25h[?25l[93mstd[m:[25;75H6-13[4;13H[?25h[?25lstd::[25;75H7-14[4;14H[?25h[?25lc[25;75H8-15[4;15H[?25h[?25lo[25;75H9-16[4;16H[?25h[?25lu[25;75H10-17[4;17H[?25h[?25lt[25;76H1-18[4;18H[?25h[?25l[25;76H2-19[4;19H[?25h[?25l<[25;76H3-20[4;20H[?25h[?25l<[25;76H4-21[4;21H[?25h[?25l[25;76H5-22[4;22H[?25h[?25l[95m"[m[25;76H6-23[4;23H[?25h[?25l[95mH[m[25;76H7-24[4;24H[?25h[?25l[95me[m[25;76H8-25[4;25H[?25h[?25l[95ml[m[25;76H9-26[4;26H[?25h[?25l[95ml[m[25;75H20-27[4;27H[?25h[?25l[95mo[m[25;76H1-28[4;28H[?25h[?25l[95m [m[25;76H2-29[4;29H[?25h[?25l[95mW[m[25;76H3-30[4;30H[?25h[?25l[95mo[m[25;76H4-31[4;31H[?25h[?25l[95mr[m[25;76H5-32[4;32H[?25h[?25l[95ml[m[25;76H6-33[4;33H[?25h[?25l[95md[m[25;76H7-34[4;34H[?25h[?25l[4;33H[K[25;76H6-33[4;33H[?25h[?25l[4;32H[K[25;76H5-32[4;32H[?25h[?25l[4;31H[K[25;76H4-31[4;31H[?25h[?25l[4;30H[K[25;76H3-30[4;30H[?25h[?25l[4;29H[K[25;76H2-29[4;29H[?25h[?25l[4;28H[K[25;76H1-28[4;28H[?25h[?25l[95m,[m[25;76H2-29[4;29H[?25h[?25l[95m [m[25;76H3-30[4;30H[?25h[?25l[95mW[m[25;76H4-31[4;31H[?25h[?25l[95mo[m[25;76H5-32[4;32H[?25h[?25l[95mr[m[25;76H6-33[4;33H[?25h[?25l[95ml[m[25;76H7-34[4;34H[?25h[?25l[95md[m[25;76H8-35[4;35H[?25h[?25l[95m![m[25;76H9-36[4;36H[?25h[?25l[95m"[m[25;75H30-37[4;37H[?25h[?25l[25;76H1-38[4;38H[?25h[?25l<[25;76H2-39[4;39H[?25h[?25l<[25;76H3-40[4;40H[?25h[?25l[25;76H4-41[4;41H[?25h[?25ls[25;76H5-42[4;42H[?25h[?25lt[25;76H6-43[4;43H[?25h[?25ld[25;76H7-44[4;44H[?25h[?25l:[25;76H8-45[4;45H[?25h[?25l:[25;76H9-46[4;46H[?25h[?25le[25;75H40-47[4;47H[?25h[?25ln[25;76H1-48[4;48H[?25h[?25ld[25;76H2-49[4;49H[?25h[?25ll[25;76H3-50[4;50H[?25h[?25l;[25;76H4-51[4;51H[?25h[?25l[5;24r[5;1H[L[1;25r[25;73H[K[25;73H5,2-9[9CAll[5;9H[?25h[?25lr[25;75H3-10[5;10H[?25h[?25le[25;75H4-11[5;11H[?25h[?25lt[25;75H5-12[5;12H[?25h[?25lu[25;75H6-13[5;13H[?25h[?25lr[25;75H7-14[5;14H[?25h[?25l[93mreturn[m[25;75H8-15[5;15H[?25h[?25l[25;75H9-16[5;16H[?25h[?25l[95m0[m[25;75H10-17[5;17H[?25h[?25l;[25;76H1-18[5;18H[?25h[?25l[3;12H[46m{
+
+
+}[m[25;73H6,2    [6;2H[?25h[?25l[7;1H[K[3;12H{
+
+
+}[25;73H7,1[7;1H[?25h[25;1H[K[7;1H[?25l[25;63H^[[7;1H[25;63H  [7;1H[25;73H7,0-1[9CAll[7;1H[?25h[?25l[25;63H:[7;1H[25;63H[K[25;1H:[?2004h[?25hwq[?25l[?2004l"src/example.cpp" 7L, 92C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142/Ex1[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142/Ex1[00m$ cd ..
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ tree
+[01;34m.[00m
+├── [01;34mEx1[00m
+│   ├── README.md
+│   ├── [01;34mlogs[00m
+│   │   └── example.log
+│   └── [01;34msrc[00m
+│       └── example.cpp
+└── README.md
+
+3 directories, 4 files
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mEx1/logs/[m
+	[31mEx1/src/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git add -A
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git commit -m "new files"
+[master 79f7b19] new files
+ 2 files changed, 7 insertions(+)
+ create mode 100644 Ex1/logs/example.log
+ create mode 100644 Ex1/src/example.cpp
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ git push
+Warning: Permanently added the ECDSA host key for IP address '140.82.114.4' to the list of known hosts.
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 556 bytes | 278.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To github.com:jahedev/cisc3142.git
+   81d5b61..79f7b19  master -> master
+]0;vagrant@ubuntu-focal: ~/VMShare/cisc3142[01;32mvagrant@ubuntu-focal[00m:[01;34m~/VMShare/cisc3142[00m$ exit
+
+Script done on 2022-09-14 12:22:09-04:00 [COMMAND_EXIT_CODE="0"]
