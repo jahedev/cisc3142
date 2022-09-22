@@ -1,4 +1,4 @@
-# Markdown Reference Guide
+# Markdown Reference Guide (Part 2)
 
 ### Headings
 
@@ -41,3 +41,12 @@ int main() {
 Use "\`" and "\`" for `code within` a line of text.
 
 
+### Tables
+
+Tables
+Use three or more hyphens "---" for column header, and use pipes "|" to separate each column.
+
+| COL 1      | COL 2        |
+| ----------- | ----------- |
+| Something   | in          |
+| the         | way.        |
