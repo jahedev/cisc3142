@@ -1,0 +1,21 @@
+name: Hello YAML Example
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Create Hello World source file"
+      - name: create program
+        run: echo "#include <iostream> int main() { std::cout << \"Hello, World!\"; return 0; } " > hello.cpp
+      - name: compile program
+        run: g++ hello.cpp -o hello.out
+      - name: run program
+        run: ./hello.out
+
