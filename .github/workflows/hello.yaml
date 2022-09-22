@@ -15,7 +15,7 @@ jobs:
       - name: create program
         run: echo '#include <iostream> int main() { std::cout << "Hello World!"; return 0; }' > hello.cpp
       - name: compile program
-        run: g++ hello.cpp -o hello.out
+        run: g++ -o hello hello.cpp
       - name: run program
-        run: ./hello.out
+        run: ./hello
 
