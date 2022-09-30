@@ -1,7 +1,16 @@
 CC = g++
 CPPFLAGS = -g -O0 -std=c++17 -Wall
+PROJ1_DIR = ./Ex1
 PROJ2_DIR = ./Ex2
+PROJ3_DIR = ./Ex2
 PROJ4_DIR = ./Ex4
+
+
+setup:
+	mkdir -p $(PROJ1_DIR)/bin
+	mkdir -p $(PROJ2_DIR)/bin
+	mkdir -p $(PROJ3_DIR)/bin
+	mkdir -p $(PROJ4_DIR)/bin
 
 lab4: $(PROJ4_DIR)/bin/Ex317.o $(PROJ4_DIR)/bin/Ex323.o $(PROJ4_DIR)/bin/Ex428.o $(PROJ4_DIR)/bin/Inflation.o $(PROJ4_DIR)/bin/Nutrition.o
 	@echo "Running program Ex 3.17:"
