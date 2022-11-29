@@ -1,27 +1,17 @@
 /*
- * Note to Professor: the prompt asked to use a nested vector (2D vector).
- * I have actually spent quite a while thinking through this and I cannot make
- * sense of it. The main issue is that there are multiple types in the CSV
- * files, strings, doubles, etc. We would have to use the equivalent of a Java
- * Generic or a java.lang.Object type for the vector. But we haven't learned
- * these things in the language yet. So I decided to create my own struct, being
- * the type of the vector.
+ * Mohammed Hossain
+ * Exercise 9
+ * CISC 3142
+ * November 28, 2022
  */
 
+#include "weather.h"
 #include <cstdio>
 #include <fstream>
 #include <iostream>
+#include <map>
 #include <string>
 #include <vector>
-
-namespace weather {
-struct weight {
-  double m1 = 1.0 / 5; // weight: 1
-  double m2 = 2.0 / 5; // weight: 2
-  double m3 = 3.0 / 5; // weight: 3
-} weight;
-
-} // namespace weather
 
 int main(int argc, char **argv) {
   using namespace std;
@@ -39,19 +29,60 @@ int main(int argc, char **argv) {
   }
 
   // read weather data from file
-  vector<pair<string, int>> wdata;
+  weather::w_list wdata;
   read_weather_csv(wdata, csv_in);
+
+  // calculate moving averages
+  weather::month_temp moving_avg;
+  moving_averages(moving_avg, wdata);
+
+  // calculated weighted averages
+  weather::month_temp weighted_avg;
+  weighted_averages(weighted_avg, wdata);
+
+  // print data
 
   return 0;
 }
+void moving_averages(weather::month_temp &month_temp, weather::w_list &wdata) {
+  weather::MovingMonths moving_months(wdata[0].second, wdata[1].second,
+                                      wdata[2].second);
 
-void read_weather_csv(std::vector<std::pair<std::string, int>> &wdata,
-                      std::ifstream &csv_file) {
-  std::vector<std::pair<std::string, int>> wdata;
+  // skip the first three, as we can't calculate 3-month
+  // moving averages for those
+  for (int i = 3; i < wdata.size(); i++) {
+    month_temp[wdata[i].first] = moving_months.simple_avg();
+    moving_months.add_moving_avg(wdata[i].second);
+  }
+}
+void weighted_averages(weather::month_temp &month_temp,
+                       weather::w_list &wdata) {
+  weather::MovingMonths moving_months(wdata[0].second, wdata[1].second,
+                                      wdata[2].second);
+
+  // set weights for each month in order
+  moving_months.set_weights(1, 2, 3);
+
+  for (int i = 3; i < wdata.size(); i++) {
+    month_temp[wdata[i].first] = moving_months.weighted_avg();
+    moving_months.add_moving_avg(wdata[i].second);
+  }
+}
+
+void read_weather_csv(weather::w_list &wdata, std::ifstream &csv_file) {
 
   std::string line;
 
-  while (getline(csv_file, line, ',') >> line) {
-    std::cout << line << std::endl;
+  // go through each line of csv file
+  while (getline(csv_file, line) >> line) {
+    // get month and temperature
+    std::string month = line.substr(0, line.find(','));
+    int temp = stoi(line.substr(line.find(',') + 1));
+
+    /* DEBUG*/
+    // std::cout << month << " -- " << temp << std::endl;
+
+    // add to vector
+    wdata.push_back(std::make_pair(month, temp));
   }
 }
