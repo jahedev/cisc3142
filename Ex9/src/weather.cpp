@@ -6,6 +6,7 @@
  */
 
 #include "weather.h" // custom data types, incl. nested vector
+#include <cmath>     // round floats
 #include <fstream>   // read csv file
 #include <iomanip>   // print with justification
 #include <iostream>
@@ -46,7 +47,7 @@ int main(int argc, char **argv) {
 
 void print_weather_data(weather::w_list &wdata, weather::month_temp &moving_avg,
                         weather::month_temp &weighted_avg) {
-  using std::cout, std::endl, std::setw, std::string, std::to_string;
+  using std::cout, std::endl, std::setw, std::string;
 
   cout << "\n―――――――――――――――――――――――――――――――――――――――――――――――――" << endl;
   cout << string(12, ' ') << "WEATHER DATA CALCULATIONS" << endl;
@@ -58,9 +59,27 @@ void print_weather_data(weather::w_list &wdata, weather::month_temp &moving_avg,
 
   for (weather::w_list::size_type i = 0; i < wdata.size(); i++) {
     string month = wdata[i].first;
-    string temp = to_string(wdata[i].second);
-    string simple_avg;
+    string temp = round_str(wdata[i].second);
+    string simple_avg =
+        moving_avg.count(month) > 0 ? round_str(moving_avg[month]) : "---";
+    string weight_avg =
+        weighted_avg.count(month) > 0 ? round_str(weighted_avg[month]) : "---";
+
+    cout << setw(6) << month << setw(14) << temp << setw(14) << simple_avg
+         << setw(14) << weight_avg << endl;
   }
+}
+
+std::string round_str(float val) {
+  int decimals = 1;
+
+  std::ostringstream ss;
+  ss << std::fixed << std::setprecision(decimals) << val;
+  std::string s = ss.str();
+  if (decimals > 0 && s[s.find_last_not_of('0')] == '.') {
+    s.erase(s.size() - decimals + 1);
+  }
+  return s;
 }
 
 void moving_averages(weather::month_temp &month_temp, weather::w_list &wdata) {

@@ -24,7 +24,7 @@ lab9: $(PROJ9_DIR)/bin/weather.o
 	cd $(PROJ9_DIR) && ./bin/weather.o # set CD to PROJ9_DIR for weather.csv file
 	@echo
 
-$(PROJ9_DIR)/bin/weather.o: $(PROJ9_DIR)/src/weather.cpp
+$(PROJ9_DIR)/bin/weather.o: $(PROJ9_DIR)/src/weather.cpp $(PROJ9_DIR)/src/weather.h
 	$(CC) $(CPPFLAGS) -o $(PROJ9_DIR)/bin/weather.o $(PROJ9_DIR)/src/weather.cpp
 
 
