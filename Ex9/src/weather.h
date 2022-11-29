@@ -53,9 +53,9 @@ public:
     return (m1_avg * weight.m1 + m2_avg * weight.m2 + m3_avg * weight.m3) /
            (weight.m1 + weight.m2 + weight.m3);
   }
-  float m1_avg() const { return this->m1_avg; }
-  float m2_avg() const { return this->m2_avg; }
-  float m3_avg() const { return this->m3_avg; }
+  float get_m1_avg() const { return this->m1_avg; }
+  float get_m2_avg() const { return this->m2_avg; }
+  float get_m3_avg() const { return this->m3_avg; }
 };
 
 } // namespace weather
@@ -63,4 +63,6 @@ public:
 void read_weather_csv(weather::w_list &, std::ifstream &);
 void moving_averages(weather::month_temp &, weather::w_list &);
 void weighted_averages(weather::month_temp &, weather::w_list &);
+void print_weather_data(weather::w_list &, weather::month_temp &,
+                        weather::month_temp &);
 #endif

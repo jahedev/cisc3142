@@ -5,13 +5,11 @@
  * November 28, 2022
  */
 
-#include "weather.h"
-#include <cstdio>
-#include <fstream>
+#include "weather.h" // custom data types, incl. nested vector
+#include <fstream>   // read csv file
+#include <iomanip>   // print with justification
 #include <iostream>
-#include <map>
 #include <string>
-#include <vector>
 
 int main(int argc, char **argv) {
   using namespace std;
@@ -40,17 +38,38 @@ int main(int argc, char **argv) {
   weather::month_temp weighted_avg;
   weighted_averages(weighted_avg, wdata);
 
-  // print data
+  // print weather data
+  print_weather_data(wdata, moving_avg, weighted_avg);
 
   return 0;
 }
+
+void print_weather_data(weather::w_list &wdata, weather::month_temp &moving_avg,
+                        weather::month_temp &weighted_avg) {
+  using std::cout, std::endl, std::setw, std::string, std::to_string;
+
+  cout << "\n―――――――――――――――――――――――――――――――――――――――――――――――――" << endl;
+  cout << string(12, ' ') << "WEATHER DATA CALCULATIONS" << endl;
+  cout << "―――――――――――――――――――――――――――――――――――――――――――――――――\n" << endl;
+  cout << setw(6) << "Month" << setw(14) << "Temperature" << setw(14)
+       << "Moving Avg." << setw(14) << "Weighted Avg" << endl;
+  cout << setw(6) << "~~~~~" << setw(14) << "~~~~~~~~~~~" << setw(14)
+       << "~~~~~~~~~~~" << setw(14) << "~~~~~~~~~~~~" << endl;
+
+  for (weather::w_list::size_type i = 0; i < wdata.size(); i++) {
+    string month = wdata[i].first;
+    string temp = to_string(wdata[i].second);
+    string simple_avg;
+  }
+}
+
 void moving_averages(weather::month_temp &month_temp, weather::w_list &wdata) {
   weather::MovingMonths moving_months(wdata[0].second, wdata[1].second,
                                       wdata[2].second);
 
   // skip the first three, as we can't calculate 3-month
   // moving averages for those
-  for (int i = 3; i < wdata.size(); i++) {
+  for (weather::w_list::size_type i = 3; i < wdata.size(); i++) {
     month_temp[wdata[i].first] = moving_months.simple_avg();
     moving_months.add_moving_avg(wdata[i].second);
   }
@@ -63,7 +82,7 @@ void weighted_averages(weather::month_temp &month_temp,
   // set weights for each month in order
   moving_months.set_weights(1, 2, 3);
 
-  for (int i = 3; i < wdata.size(); i++) {
+  for (weather::w_list::size_type i = 3; i < wdata.size(); i++) {
     month_temp[wdata[i].first] = moving_months.weighted_avg();
     moving_months.add_moving_avg(wdata[i].second);
   }
