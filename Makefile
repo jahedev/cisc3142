@@ -6,6 +6,8 @@ PROJ3_DIR = ./Ex2
 PROJ4_DIR = ./Ex4
 PROJ5_DIR = ./Ex5
 PROJ7_DIR = ./Ex7
+# PROJ8_DIR = ./Ex8
+PROJ9_DIR = ./Ex9
 
 
 setup:
@@ -14,6 +16,17 @@ setup:
 	mkdir -p $(PROJ3_DIR)/bin
 	mkdir -p $(PROJ4_DIR)/bin
 	mkdir -p $(PROJ7_DIR)/bin
+	# mkdir -p $(PROJ8_DIR)/bin
+	mkdir -p $(PROJ9_DIR)/bin
+
+lab9: $(PROJ9_DIR)/bin/weather.o
+	@echo "\nRunning program Weather Averages:\n"
+	cd $(PROJ9_DIR) && ./bin/weather.o # set CD to PROJ9_DIR for weather.csv file
+	@echo
+
+$(PROJ9_DIR)/bin/weather.o: $(PROJ9_DIR)/src/weather.cpp
+	$(CC) $(CPPFLAGS) -o $(PROJ9_DIR)/bin/weather.o $(PROJ9_DIR)/src/weather.cpp
+
 
 lab7: $(PROJ7_DIR)/bin/Pixel.o $(PROJ7_DIR)/bin/Q1_main.o $(PROJ7_DIR)/bin/Q2_main.o
 	@echo "Running program Pixel:"
