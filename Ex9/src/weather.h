@@ -8,7 +8,7 @@
 #include <vector>
 
 namespace weather {
-// i.e. vector<pair<string, int>
+// i.e. vector<pair<string, int>>
 typedef std::pair<std::string, int> w_item;
 typedef std::vector<w_item> w_list;
 
@@ -25,8 +25,8 @@ private:
   // weights for weighted averages are equal by default
   struct weight {
     int m1 = 1;
-    int m2 = 2;
-    int m3 = 9;
+    int m2 = 1;
+    int m3 = 1;
   } weight;
 
 public:
@@ -42,18 +42,22 @@ public:
     m3_temp = new_m3_temp;
   }
 
+  // allow user to change weights
   void set_weights(int m1, int m2, int m3) {
     weight.m1 = m1;
     weight.m2 = m2;
     weight.m3 = m3;
   }
 
+  // calculate two averages
   float simple_avg() const { return (m1_temp + m2_temp + m3_temp) / 3; }
   float weighted_avg() const {
 
     return (m1_temp * weight.m1 + m2_temp * weight.m2 + m3_temp * weight.m3) /
            (weight.m1 + weight.m2 + weight.m3);
   }
+
+  // getters
   float get_m1_avg() const { return this->m1_temp; }
   float get_m2_avg() const { return this->m2_temp; }
   float get_m3_avg() const { return this->m3_temp; }
@@ -61,6 +65,7 @@ public:
 
 } // namespace weather
 
+// function declarations
 void read_weather_csv(weather::w_list &, std::ifstream &);
 void moving_averages(weather::month_temp &, weather::w_list &);
 void weighted_averages(weather::month_temp &, weather::w_list &);

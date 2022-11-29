@@ -49,13 +49,18 @@ void print_weather_data(weather::w_list &wdata, weather::month_temp &moving_avg,
                         weather::month_temp &weighted_avg) {
   using std::cout, std::endl, std::setw, std::string;
 
+  // row printer helper
+  auto print_row = [](std::string s1, std::string s2, std::string s3,
+                      std::string s4) {
+    cout << setw(6) << s1 << setw(14) << s2 << setw(14) << s3 << setw(14) << s4
+         << endl;
+  };
+
   cout << "\n―――――――――――――――――――――――――――――――――――――――――――――――――" << endl;
   cout << string(12, ' ') << "WEATHER DATA CALCULATIONS" << endl;
   cout << "―――――――――――――――――――――――――――――――――――――――――――――――――\n" << endl;
-  cout << setw(6) << "Month" << setw(14) << "Temperature" << setw(14)
-       << "Moving Avg." << setw(14) << "Weighted Avg" << endl;
-  cout << setw(6) << "~~~~~" << setw(14) << "~~~~~~~~~~~" << setw(14)
-       << "~~~~~~~~~~~" << setw(14) << "~~~~~~~~~~~~" << endl;
+  print_row("Month", "Temperature", "Moving Avg", "Weighted Avg");
+  print_row("~~~~~", "~~~~~~~~~~~", "~~~~~~~~~~", "~~~~~~~~~~~~");
 
   for (weather::w_list::size_type i = 0; i < wdata.size(); i++) {
     string month = wdata[i].first;
@@ -65,11 +70,11 @@ void print_weather_data(weather::w_list &wdata, weather::month_temp &moving_avg,
     string weight_avg =
         weighted_avg.count(month) > 0 ? round_str(weighted_avg[month]) : "---";
 
-    cout << setw(6) << month << setw(14) << temp << setw(14) << simple_avg
-         << setw(14) << weight_avg << endl;
+    print_row(month, temp, simple_avg, weight_avg);
   }
 }
 
+// round a float to 1 decimal places and return as string
 std::string round_str(float val) {
   int decimals = 1;
 
@@ -82,6 +87,7 @@ std::string round_str(float val) {
   return s;
 }
 
+// calculate moving averages
 void moving_averages(weather::month_temp &month_temp, weather::w_list &wdata) {
   weather::MovingMonths moving_months(wdata[0].second, wdata[1].second,
                                       wdata[2].second);
@@ -93,6 +99,8 @@ void moving_averages(weather::month_temp &month_temp, weather::w_list &wdata) {
     moving_months.add_moving_avg(wdata[i].second);
   }
 }
+
+// calculate weighted averages
 void weighted_averages(weather::month_temp &month_temp,
                        weather::w_list &wdata) {
   weather::MovingMonths moving_months(wdata[0].second, wdata[1].second,
@@ -107,6 +115,7 @@ void weighted_averages(weather::month_temp &month_temp,
   }
 }
 
+// read data from csv file using w_list, i.e. vector<pair<string, int>>
 void read_weather_csv(weather::w_list &wdata, std::ifstream &csv_file) {
 
   std::string line;
