@@ -1,0 +1,129 @@
+Script started on 2022-11-29 05:18:41-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="127" LINES="11"]
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ ls
+[?2004l[0m[01;34mEx1[0m  [01;34mEx2[0m  [01;34mEx3[0m  [01;34mEx4[0m  [01;34mEx5[0m  [01;34mEx7[0m  [01;34mEx8[0m  [01;34mEx9[0m  Makefile  README.md  script-2022-11-29.log  time-2022-11-29.txt
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ tree Ex9
+[?2004lCommand 'tree' not found, but can be installed with:
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+sudo apt  install tree  # version 2.0.2-1
+See 'snap info tree' for additional versions.
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ apti tree
+[?2004l[sudo] password for jahedev: *****     
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  fonts-glyphicons-halflings fonts-lyx fonts-mathjax gyp isympy-common isympy3 javascript-common jupyter-client
+  jupyter-console jupyter-core jupyter-nbconvert jupyter-nbextension-jupyter-js-widgets jupyter-nbformat jupyter-notebook
+  libboost-dev libboost1.74-dev libc-ares2 libjs-async libjs-backbone libjs-bootstrap libjs-bootstrap-tour libjs-codemirror
+  libjs-es6-promise libjs-events libjs-inherits libjs-is-typedarray libjs-jed libjs-jquery libjs-jquery-typeahead
+  libjs-jquery-ui libjs-marked libjs-mathjax libjs-moment libjs-prettify libjs-psl libjs-regenerate libjs-requirejs
+  libjs-requirejs-text libjs-source-map libjs-sphinxdoc libjs-sprintf-js libjs-text-encoding libjs-typedarray-to-buffer
+  libjs-underscore libjs-xterm liblbfgsb0 libnode-dev libnode108 libopenblas-dev libopenblas-pthread-dev libopenblas0
+  libpython3-all-dev libpython3-dev libpython3.10-dev libqhull-r8.0 libuv1-dev libxsimd-dev node-abab node-abbrev
+  node-ampproject-remapping node-ansi-regex node-ansi-styles node-ansistyles node-aproba node-are-we-there-yet node-arrify
+  node-asap node-async node-async-each node-asynckit node-auto-bind node-babel-plugin-add-module-exports node-babel7-runtime
+  node-balanced-match node-big.js node-binary-extensions node-brace-expansion node-camelcase node-caniuse-lite node-chownr
+  node-ci-info node-cli-boxes node-cli-cursor node-collection-visit node-color-convert node-color-name node-commander
+  node-commondir node-console-control-strings node-convert-source-map node-core-js node-core-js-pure node-core-util-is
+  node-decompress-response node-deep-is node-define-property node-delayed-stream node-delegates node-depd node-diff
+  node-domelementtype node-domhandler node-electron-to-chromium node-emojis-list node-encoding node-end-of-stream
+  node-entities node-err-code node-error-ex node-escape-string-regexp node-estraverse node-esutils node-fancy-log
+  node-fast-deep-equal node-fast-levenshtein node-find-up node-foreground-child node-formidable node-fs-readdir-recursive
+  node-fs-write-stream-atomic node-fs.realpath node-function-bind node-get-caller-file node-get-stream node-get-value
+  node-glob node-globals node-got node-graceful-fs node-growl node-has-flag node-has-unicode node-has-value node-has-values
+  node-hosted-git-info node-iconv-lite node-iferr node-imurmurhash node-indent-string node-inflight node-inherits node-ini
+  node-ip node-ip-regex node-is-arrayish node-is-binary-path node-is-buffer node-is-descriptor node-is-extglob
+  node-is-path-cwd node-is-plain-obj node-is-plain-object node-is-stream node-is-typedarray node-is-windows node-isarray
+  node-isexe node-isobject node-jed node-js-tokens node-json-buffer node-json-parse-better-errors node-json-schema-traverse
+  node-json-stable-stringify node-jsonify node-jsonparse node-kind-of node-levn node-locate-path node-lodash-packages
+  node-lowercase-keys node-lru-cache node-map-visit node-mimic-response node-minimatch node-minimist node-minipass
+  node-mute-stream node-n3 node-negotiator node-npm-run-path node-object-inspect node-object-visit node-once node-optimist
+  node-optionator node-osenv node-p-cancelable node-p-limit node-p-locate node-p-map node-parse5 node-pascalcase
+  node-path-dirname node-path-exists node-path-is-absolute node-path-is-inside node-path-type node-pify node-pkg-dir
+  node-postcss-value-parser node-prelude-ls node-process-nextick-args node-promise-inflight node-promise-retry node-promzard
+  node-pump node-quick-lru node-read node-readable-stream node-regenerator-runtime node-regenerator-transform node-regjsgen
+  node-repeat-string node-require-directory node-resolve node-resolve-cwd node-resolve-from node-restore-cursor node-retry
+  node-run-queue node-safe-buffer node-set-blocking node-set-immediate-shim node-shebang-command node-shebang-regex
+  node-signal-exit node-slash node-slice-ansi node-source-map node-spdx-correct node-spdx-exceptions
+  node-spdx-expression-parse node-spdx-license-ids node-sprintf-js node-ssri node-stack-utils node-string-decoder
+  node-strip-bom node-supports-color node-text-table node-time-stamp node-to-fast-properties node-type-check
+  node-typedarray-to-buffer node-unicode-canonical-property-names-ecmascript node-unicode-match-property-value-ecmascript
+  node-unicode-property-aliases-ecmascript node-universalify node-unset-value node-util-deprecate node-uuid node-v8flags
+  node-validate-npm-package-license node-webidl-conversions node-whatwg-fetch node-wordwrap node-wrappy
+  node-write-file-atomic node-xtend node-y18n node-yallist node-yaml nodejs-doc pandoc pandoc-data python-babel-localedata
+  python-matplotlib-data python-tinycss2-common python3-all python3-all-dev python3-appdirs python3-argon2 python3-attr
+  python3-babel python3-backcall python3-beniget python3-bleach python3-cycler python3-decorator python3-defusedxml
+  python3-dev python3-entrypoints python3-fastjsonschema python3-fonttools python3-fs python3-gast python3-ipykernel
+  python3-ipython python3-ipython-genutils python3-ipywidgets python3-jedi python3-jinja2 python3-jsonschema
+  python3-jupyter-client python3-jupyter-console python3-jupyter-core python3-jupyterlab-pygments python3-kiwisolver
+  python3-lz4 python3-matplotlib python3-matplotlib-inline python3-mpmath python3-nbclient python3-nbconvert python3-nbformat
+  python3-nest-asyncio python3-notebook python3-numpy python3-packaging python3-pandocfilters python3-parso
+  python3-pickleshare python3-ply python3-prometheus-client python3-prompt-toolkit python3-psutil python3-py python3-pygments
+  python3-pyrsistent python3-pythran python3-scipy python3-send2trash python3-sympy python3-terminado python3-tinycss2
+  python3-tornado python3-traitlets python3-tz python3-ufolib2 python3-unicodedata2 python3-wcwidth
+  python3-widgetsnbextension python3-zmq python3.10-dev unicode-data xul-ext-ubufox
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 47.0 kB of archives.
+After this operation, 114 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://us.archive.ubuntu.com/ubuntu kinetic/universe amd64 tree amd64 2.0.3-1 [47.0 kB]
+[33m9% [1 tree 5,511 B/47.0 kB 12%][0m[33m                               100% [Working][0m              Fetched 47.0 kB in 0s (465 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+
+7[0;10r8[1ASelecting previously unselected package tree.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 302344 files and directories currently installed.)
+Preparing to unpack .../tree_2.0.3-1_amd64.deb ...
+7[11;0f[42m[30mProgress: [  0%][49m[39m [.........................................................................................................] 87[11;0f[42m[30mProgress: [ 20%][49m[39m [#####################....................................................................................] 8Unpacking tree (2.0.3-1) ...
+7[11;0f[42m[30mProgress: [ 40%][49m[39m [##########################################...............................................................] 8Setting up tree (2.0.3-1) ...
+7[11;0f[42m[30mProgress: [ 60%][49m[39m [###############################################################..........................................] 87[11;0f[42m[30mProgress: [ 80%][49m[39m [####################################################################################.....................] 8Processing triggers for man-db (2.10.2-2) ...
+
+7[0;11r8[1A[J[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ tree Ex9
+[?2004l[01;34mEx9[0m
+├── [01;34msrc[0m
+│   ├── weather.cpp
+│   └── weather.h
+├── weather.csv
+└── weather.ods
+
+1 directory, 4 files
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ make setup
+[?2004lmkdir -p ./Ex1/bin
+mkdir -p ./Ex2/bin
+mkdir -p ./Ex2/bin
+mkdir -p ./Ex4/bin
+mkdir -p ./Ex7/bin
+# mkdir -p /bin
+mkdir -p ./Ex9/bin
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ make le[Kab9
+[?2004lg++ -g -O0 -std=c++17 -Wall -o ./Ex9/bin/weather.o ./Ex9/src/weather.cpp
+
+Running program Weather Averages:
+
+cd ./Ex9 && ./bin/weather.o # set CD to PROJ9_DIR for weather.csv file
+
+―――――――――――――――――――――――――――――――――――――――――――――――――
+            WEATHER DATA CALCULATIONS
+―――――――――――――――――――――――――――――――――――――――――――――――――
+
+ Month   Temperature    Moving Avg  Weighted Avg
+ ~~~~~   ~~~~~~~~~~~    ~~~~~~~~~~  ~~~~~~~~~~~~
+   Jan          39.0           ---           ---
+   Feb          42.0           ---           ---
+   Mar          50.0           ---           ---
+   Apr          60.0          43.7          45.5
+   May          71.0          50.7          53.7
+   Jun          79.0          60.3          63.8
+   Jul          85.0          70.0          73.2
+   Aug          81.0          78.3          80.7
+   Sep          76.0          81.7          82.0
+
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ echo All done :)
+[?2004lbash: syntax error near unexpected token `)'
+[?2004h]0;jahedev@mjpc: ~/Github/cisc3142[01;32mjahedev@mjpc[00m:[01;34m~/Github/cisc3142[00m$ exit
+[?2004lexit
+
+Script done on 2022-11-29 05:19:30-05:00 [COMMAND_EXIT_CODE="2"]
