@@ -24,19 +24,34 @@ struct weight {
 } // namespace weather
 
 int main(int argc, char **argv) {
+  using namespace std;
+
   // expect argument for csv filepath, otherwise default to weather.csv
-  std::string filename = argc > 1 ? argv[1] : "weather.csv";
+  string filename = argc > 1 ? argv[1] : "weather.csv";
+
   // open csv file
-  std::ifstream csv_in(filename);
+  ifstream csv_in(filename);
+
   // if file isn't open, then exit
   if (!csv_in.is_open()) {
-    std::cerr << "Unable to open file '" << filename << "'." << std::endl;
+    cerr << "Unable to open file '" << filename << "'." << endl;
     return -1;
   }
+
+  // read weather data from file
+  vector<pair<string, int>> wdata;
+  read_weather_csv(wdata, csv_in);
 
   return 0;
 }
 
-std::vector<std::pair<std::string, int>> read_weather_csv(std::ifstream) {
-  std::vector<std::pair<std::string, int>> data;
+void read_weather_csv(std::vector<std::pair<std::string, int>> &wdata,
+                      std::ifstream &csv_file) {
+  std::vector<std::pair<std::string, int>> wdata;
+
+  std::string line;
+
+  while (getline(csv_file, line, ',') >> line) {
+    std::cout << line << std::endl;
+  }
 }

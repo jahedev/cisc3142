@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 
-std::vector<std::pair<std::string, int>> read_weather_csv(std::ifstream &);
+void read_weather_csv(std::vector<std::pair<std::string, int>> &,
+                      std::ifstream &);
 
 #endif
