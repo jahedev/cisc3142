@@ -18,6 +18,17 @@ setup:
 	mkdir -p $(PROJ7_DIR)/bin
 	# mkdir -p $(PROJ8_DIR)/bin
 	mkdir -p $(PROJ9_DIR)/bin
+	mkdir -p $(PROJ10_DIR)/bin
+
+lab10: $(PROJ10_DIR)/bin/weather.o
+	@echo "\nRunning program Film:\n"
+	cd $(PROJ10_DIR) && ./bin/Film.o # set CD to PROJ10_DIR for film.csv file
+	@echo
+
+$(PROJ10_DIR)/bin/Film.o: $(PROJ10_DIR)/src/Film.cpp $(PROJ10_DIR)/src/Film.h
+	$(CC) $(CPPFLAGS) -o $(PROJ10_DIR)/bin/Film.o $(PROJ10_DIR)/src/Film.cpp
+
+
 
 lab9: $(PROJ9_DIR)/bin/weather.o
 	@echo "\nRunning program Weather Averages:\n"
