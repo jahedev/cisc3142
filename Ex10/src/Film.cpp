@@ -1,5 +1,4 @@
 
-int main() {
   // TODO: Successfully read in all lines of the input file (CSV format) using
   // fstream into your selected data structure.
 
@@ -12,5 +11,16 @@ int main() {
   // compare the two unique lists
   // TODO: Write output to either console or another file.
 
-  return 0;
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+
+
+using namespace std;
+
+int main() {
+
+    return 0;
 }
